@@ -3,62 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Test the GPT Bot</title>
+  <title>Test My GPT Bot</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #eaf0f6, #ffffff);
       color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 20px;
       text-align: center;
-      padding: 50px 20px;
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 3rem;
       margin-bottom: 20px;
+      color: #1a1a1a;
     }
 
     p {
-      font-size: 1.1em;
-      max-width: 600px;
-      margin: 0 auto 30px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 40px;
     }
 
-    .button {
-      background-color: #007bff;
+    .cta-button {
+      display: inline-block;
+      background-color: #0077cc;
       color: white;
-      padding: 14px 24px;
-      border: none;
+      padding: 15px 30px;
+      font-size: 1.1rem;
       border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background 0.3s ease;
       text-decoration: none;
+      transition: background 0.3s ease;
     }
 
-    .button:hover {
-      background-color: #0056b3;
+    .cta-button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 60px;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <h1>Turn a document into a chatbot?</h1>
-  <p>
-    This GPT bot is trained on the Wikipedia page about the colossal squid.  
-    Ask anything — it will only reply based on that content.  
-  </p>
-  <p>
-    Curious how it works? Just click the chat icon in the bottom right and start talking to the squid.
-  </p>
-  <a href="#" class="button">Try it now</a>
+  <div class="container">
+    <h1>Talk to a custom GPT bot</h1>
+    <p>This chatbot is trained only on the Wikipedia page about the colossal squid.<br>
+    Ask anything about its size, anatomy, behavior or habitat — and see how it answers without hallucinating.</p>
 
-  <!-- Replace with your actual Lovable widget script -->
+    <a href="#" class="cta-button">Click the chat icon below to start</a>
+
+    <footer>
+      Built with ❤️ by a GPT enthusiast — powered by OpenAI & Lovable
+    </footer>
+  </div>
+
+  <!-- Replace with your actual bot ID -->
   <script
     src="https://plug-in-chat-gpt.lovable.app/widget.js"
     id="lovable-chat-widget"
-    data-id="your-bot-id-here">
+    data-id="TON-BOT-ID-ICI">
   </script>
 
 </body>
