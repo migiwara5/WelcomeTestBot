@@ -7,6 +7,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX'); // Replace G-XXXXXXX with your Google Analytics ID
+  </script>
   <style>
     * {
       box-sizing: border-box;
@@ -35,6 +42,27 @@
       max-width: 700px;
       margin-bottom: 40px;
       opacity: 0.9;
+    }
+    .examples {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 30px;
+      text-align: left;
+      max-width: 600px;
+    }
+    .examples h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #00c2ff;
+    }
+    .examples ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .examples li {
+      margin-bottom: 10px;
+      font-size: 1rem;
     }
     .button {
       background-color: #00c2ff;
@@ -69,6 +97,16 @@
       This bot only knows what’s on the Wikipedia page about the colossal squid. Ask it anything — no hallucinations, no BS. Just precise, focused answers from a custom GPT.
     </p>
     <a href="#" class="button">Start the chat below</a>
+
+    <div class="examples">
+      <h2>Try asking:</h2>
+      <ul>
+        <li>How big can the colossal squid get?</li>
+        <li>Where does it live?</li>
+        <li>How is it different from the giant squid?</li>
+        <li>What are its predators?</li>
+      </ul>
+    </div>
   </main>
 
   <footer>
