@@ -1,174 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>e-Scaro GPT Bot</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Outfit', sans-serif;
-      background: #0c0f1c;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      align-items: center;
-      text-align: center;
-      overflow-x: hidden;
-    }
-    header {
-      width: 100%;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #0c0f1c;
-    }
-    .logo {
-      height: 50px;
-      margin-left: 20px;
-    }
-    .lang-switch {
-      margin-right: 20px;
-    }
-    .lang-switch button {
-      background: #00c2ff;
-      border: none;
-      color: #000;
-      padding: 10px 16px;
-      border-radius: 20px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    main {
-      max-width: 900px;
-      padding: 40px 20px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 20px;
-      text-shadow: 0 0 10px rgba(0, 194, 255, 0.7);
-    }
-    p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 40px;
-      opacity: 0.9;
-    }
-    .button {
-      background-color: #00c2ff;
-      color: #000;
-      padding: 16px 36px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      text-decoration: none;
-    }
-    .button:hover {
-      background-color: #00a3d3;
-    }
-    .examples, .usecases {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 30px;
-      border-radius: 12px;
-      margin-top: 30px;
-      text-align: left;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .examples h2, .usecases h2 {
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-      color: #00c2ff;
-    }
-    .examples ul, .usecases ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    .examples li, .usecases li {
-      margin-bottom: 10px;
-      font-size: 1rem;
-    }
-    footer {
-      margin-top: auto;
-      padding: 30px;
-      font-size: 0.9rem;
-      color: #aaa;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="e-Scaro Logo" class="logo">
-    <div class="lang-switch">
-      <button onclick="toggleLanguage()">FR / EN</button>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colossal Squid GPT | Deep Sea Intelligence</title>
+    <meta name="description" content="Chat with a specialized GPT trained exclusively on colossal squid knowledge - no hallucinations, just deep ocean intelligence" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="author" content="Lovable" />
 
-  <main>
-    <h1 id="title">Talk to a GPT bot trained on a single source</h1>
-    <p id="subtitle">
-      This bot only knows what’s on the Wikipedia page about the colossal squid. Ask it anything — no hallucinations, no BS. Just precise, focused answers from a custom GPT.
-    </p>
-    <a href="#" class="button" id="cta">Start the chat below</a>
+    <meta property="og:title" content="de84925b-c93a-4b70-a9da-ca8575b7173b" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <div class="examples">
-      <h2 id="examples-title">Try asking:</h2>
-      <ul id="examples-list">
-        <li>How big can the colossal squid get?</li>
-        <li>Where does it live?</li>
-        <li>How is it different from the giant squid?</li>
-        <li>What are its predators?</li>
-      </ul>
-    </div>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
 
-    <div class="usecases">
-      <h2 id="usecases-title">What could you use this for?</h2>
-      <ul id="usecases-list">
-        <li><strong>Local bakery:</strong> Let customers ask about opening hours, ingredients, allergens, or today’s menu.</li>
-        <li><strong>Online shop:</strong> Train the bot on your product catalog or FAQ to provide instant, reliable support.</li>
-        <li><strong>Consulting agency:</strong> Upload your methodology or service brochure and let the bot answer client questions.</li>
-        <li><strong>Internal team support:</strong> Turn an internal process PDF into a smart helpdesk bot.</li>
-        <li><strong>Event booth or landing page:</strong> Replace your static PDF with a smart assistant that interacts.</li>
-      </ul>
-    </div>
-  </main>
-
-  <footer>
-    Built with ❤️ using OpenAI and Lovable | Demo by e-Scaro
-  </footer>
-
-  <!-- Lovable GPT bot script -->
-  <script
-    src="https://plug-in-chat-gpt.lovable.app/widget.js"
-    id="lovable-chat-widget"
-    data-id="TON-BOT-ID-ICI">
-  </script>
-
-  <!-- Language switch logic (unchanged) -->
-  <script>
-    const content = {...}; // conservé tel quel
-  </script>
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
